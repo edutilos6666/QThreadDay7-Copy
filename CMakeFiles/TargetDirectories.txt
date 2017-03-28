@@ -1,0 +1,3 @@
+C:/QtNew/myProjects/Day7 - Copy/CMakeFiles/Day7.dir
+C:/QtNew/myProjects/Day7 - Copy/CMakeFiles/ALL_BUILD.dir
+C:/QtNew/myProjects/Day7 - Copy/CMakeFiles/ZERO_CHECK.dir

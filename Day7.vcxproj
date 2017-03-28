@@ -1,0 +1,514 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{D1EBAF7D-97F4-3D4F-A619-3989FA75AA4F}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>Day7</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\QtNew\myProjects\Day7 - Copy\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Day7.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Day7</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\QtNew\myProjects\Day7 - Copy\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Day7.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Day7</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\QtNew\myProjects\Day7 - Copy\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Day7.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Day7</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\QtNew\myProjects\Day7 - Copy\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Day7.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Day7</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\QtNew\myProjects\Day7 - Copy;C:\QtNew\myProjects\Day7 - Copy\Day7_autogen\include;C:\QtNew\myProjects\Day7 - Copy\..\include;C:\Qt86\5.8\msvc2015\include;C:\Qt86\5.8\msvc2015\include\QtWidgets;C:\Qt86\5.8\msvc2015\include\QtGui;C:\Qt86\5.8\msvc2015\include\QtANGLE;C:\Qt86\5.8\msvc2015\include\QtCore;C:\Qt86\5.8\msvc2015\.\mkspecs\win32-msvc2015;C:\Qt86\5.8\msvc2015\include\QtSql;C:\Qt86\5.8\msvc2015\include\QtXml;C:\Qt86\5.8\msvc2015\include\QtXmlPatterns;C:\Qt86\5.8\msvc2015\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_SQL_LIB;QT_XML_LIB;QT_XMLPATTERNS_LIB;QT_NETWORK_LIB;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_SQL_LIB;QT_XML_LIB;QT_XMLPATTERNS_LIB;QT_NETWORK_LIB;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\QtNew\myProjects\Day7 - Copy;C:\QtNew\myProjects\Day7 - Copy\Day7_autogen\include;C:\QtNew\myProjects\Day7 - Copy\..\include;C:\Qt86\5.8\msvc2015\include;C:\Qt86\5.8\msvc2015\include\QtWidgets;C:\Qt86\5.8\msvc2015\include\QtGui;C:\Qt86\5.8\msvc2015\include\QtANGLE;C:\Qt86\5.8\msvc2015\include\QtCore;C:\Qt86\5.8\msvc2015\.\mkspecs\win32-msvc2015;C:\Qt86\5.8\msvc2015\include\QtSql;C:\Qt86\5.8\msvc2015\include\QtXml;C:\Qt86\5.8\msvc2015\include\QtXmlPatterns;C:\Qt86\5.8\msvc2015\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\QtNew\myProjects\Day7 - Copy;C:\QtNew\myProjects\Day7 - Copy\Day7_autogen\include;C:\QtNew\myProjects\Day7 - Copy\..\include;C:\Qt86\5.8\msvc2015\include;C:\Qt86\5.8\msvc2015\include\QtWidgets;C:\Qt86\5.8\msvc2015\include\QtGui;C:\Qt86\5.8\msvc2015\include\QtANGLE;C:\Qt86\5.8\msvc2015\include\QtCore;C:\Qt86\5.8\msvc2015\.\mkspecs\win32-msvc2015;C:\Qt86\5.8\msvc2015\include\QtSql;C:\Qt86\5.8\msvc2015\include\QtXml;C:\Qt86\5.8\msvc2015\include\QtXmlPatterns;C:\Qt86\5.8\msvc2015\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target Day7</Message>
+      <Command>setlocal
+cd "C:\QtNew\myProjects\Day7 - Copy"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\a\cmake\bin\cmake.exe -E cmake_autogen "C:/QtNew/myProjects/Day7 - Copy/CMakeFiles/Day7_autogen.dir/" Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\Qt86\5.8\msvc2015\lib\Qt5Widgetsd.lib;C:\Qt86\5.8\msvc2015\lib\Qt5Guid.lib;C:\Qt86\5.8\msvc2015\lib\Qt5Sqld.lib;C:\Qt86\5.8\msvc2015\lib\Qt5Xmld.lib;C:\Qt86\5.8\msvc2015\lib\Qt5XmlPatternsd.lib;C:\Qt86\5.8\msvc2015\lib\Qt5Networkd.lib;C:\Qt86\5.8\msvc2015\lib\Qt5Cored.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/QtNew/myProjects/Day7 - Copy/Debug/Day7.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/QtNew/myProjects/Day7 - Copy/Debug/Day7.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\QtNew\myProjects\Day7 - Copy;C:\QtNew\myProjects\Day7 - Copy\Day7_autogen\include;C:\QtNew\myProjects\Day7 - Copy\..\include;C:\Qt86\5.8\msvc2015\include;C:\Qt86\5.8\msvc2015\include\QtWidgets;C:\Qt86\5.8\msvc2015\include\QtGui;C:\Qt86\5.8\msvc2015\include\QtANGLE;C:\Qt86\5.8\msvc2015\include\QtCore;C:\Qt86\5.8\msvc2015\.\mkspecs\win32-msvc2015;C:\Qt86\5.8\msvc2015\include\QtSql;C:\Qt86\5.8\msvc2015\include\QtXml;C:\Qt86\5.8\msvc2015\include\QtXmlPatterns;C:\Qt86\5.8\msvc2015\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_SQL_LIB;QT_XML_LIB;QT_XMLPATTERNS_LIB;QT_NETWORK_LIB;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_SQL_LIB;QT_XML_LIB;QT_XMLPATTERNS_LIB;QT_NETWORK_LIB;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\QtNew\myProjects\Day7 - Copy;C:\QtNew\myProjects\Day7 - Copy\Day7_autogen\include;C:\QtNew\myProjects\Day7 - Copy\..\include;C:\Qt86\5.8\msvc2015\include;C:\Qt86\5.8\msvc2015\include\QtWidgets;C:\Qt86\5.8\msvc2015\include\QtGui;C:\Qt86\5.8\msvc2015\include\QtANGLE;C:\Qt86\5.8\msvc2015\include\QtCore;C:\Qt86\5.8\msvc2015\.\mkspecs\win32-msvc2015;C:\Qt86\5.8\msvc2015\include\QtSql;C:\Qt86\5.8\msvc2015\include\QtXml;C:\Qt86\5.8\msvc2015\include\QtXmlPatterns;C:\Qt86\5.8\msvc2015\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\QtNew\myProjects\Day7 - Copy;C:\QtNew\myProjects\Day7 - Copy\Day7_autogen\include;C:\QtNew\myProjects\Day7 - Copy\..\include;C:\Qt86\5.8\msvc2015\include;C:\Qt86\5.8\msvc2015\include\QtWidgets;C:\Qt86\5.8\msvc2015\include\QtGui;C:\Qt86\5.8\msvc2015\include\QtANGLE;C:\Qt86\5.8\msvc2015\include\QtCore;C:\Qt86\5.8\msvc2015\.\mkspecs\win32-msvc2015;C:\Qt86\5.8\msvc2015\include\QtSql;C:\Qt86\5.8\msvc2015\include\QtXml;C:\Qt86\5.8\msvc2015\include\QtXmlPatterns;C:\Qt86\5.8\msvc2015\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target Day7</Message>
+      <Command>setlocal
+cd "C:\QtNew\myProjects\Day7 - Copy"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\a\cmake\bin\cmake.exe -E cmake_autogen "C:/QtNew/myProjects/Day7 - Copy/CMakeFiles/Day7_autogen.dir/" Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\Qt86\5.8\msvc2015\lib\Qt5Widgets.lib;C:\Qt86\5.8\msvc2015\lib\Qt5Gui.lib;C:\Qt86\5.8\msvc2015\lib\Qt5Sql.lib;C:\Qt86\5.8\msvc2015\lib\Qt5Xml.lib;C:\Qt86\5.8\msvc2015\lib\Qt5XmlPatterns.lib;C:\Qt86\5.8\msvc2015\lib\Qt5Network.lib;C:\Qt86\5.8\msvc2015\lib\Qt5Core.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/QtNew/myProjects/Day7 - Copy/Release/Day7.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/QtNew/myProjects/Day7 - Copy/Release/Day7.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\QtNew\myProjects\Day7 - Copy;C:\QtNew\myProjects\Day7 - Copy\Day7_autogen\include;C:\QtNew\myProjects\Day7 - Copy\..\include;C:\Qt86\5.8\msvc2015\include;C:\Qt86\5.8\msvc2015\include\QtWidgets;C:\Qt86\5.8\msvc2015\include\QtGui;C:\Qt86\5.8\msvc2015\include\QtANGLE;C:\Qt86\5.8\msvc2015\include\QtCore;C:\Qt86\5.8\msvc2015\.\mkspecs\win32-msvc2015;C:\Qt86\5.8\msvc2015\include\QtSql;C:\Qt86\5.8\msvc2015\include\QtXml;C:\Qt86\5.8\msvc2015\include\QtXmlPatterns;C:\Qt86\5.8\msvc2015\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_SQL_LIB;QT_XML_LIB;QT_XMLPATTERNS_LIB;QT_NETWORK_LIB;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_SQL_LIB;QT_XML_LIB;QT_XMLPATTERNS_LIB;QT_NETWORK_LIB;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\QtNew\myProjects\Day7 - Copy;C:\QtNew\myProjects\Day7 - Copy\Day7_autogen\include;C:\QtNew\myProjects\Day7 - Copy\..\include;C:\Qt86\5.8\msvc2015\include;C:\Qt86\5.8\msvc2015\include\QtWidgets;C:\Qt86\5.8\msvc2015\include\QtGui;C:\Qt86\5.8\msvc2015\include\QtANGLE;C:\Qt86\5.8\msvc2015\include\QtCore;C:\Qt86\5.8\msvc2015\.\mkspecs\win32-msvc2015;C:\Qt86\5.8\msvc2015\include\QtSql;C:\Qt86\5.8\msvc2015\include\QtXml;C:\Qt86\5.8\msvc2015\include\QtXmlPatterns;C:\Qt86\5.8\msvc2015\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\QtNew\myProjects\Day7 - Copy;C:\QtNew\myProjects\Day7 - Copy\Day7_autogen\include;C:\QtNew\myProjects\Day7 - Copy\..\include;C:\Qt86\5.8\msvc2015\include;C:\Qt86\5.8\msvc2015\include\QtWidgets;C:\Qt86\5.8\msvc2015\include\QtGui;C:\Qt86\5.8\msvc2015\include\QtANGLE;C:\Qt86\5.8\msvc2015\include\QtCore;C:\Qt86\5.8\msvc2015\.\mkspecs\win32-msvc2015;C:\Qt86\5.8\msvc2015\include\QtSql;C:\Qt86\5.8\msvc2015\include\QtXml;C:\Qt86\5.8\msvc2015\include\QtXmlPatterns;C:\Qt86\5.8\msvc2015\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target Day7</Message>
+      <Command>setlocal
+cd "C:\QtNew\myProjects\Day7 - Copy"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\a\cmake\bin\cmake.exe -E cmake_autogen "C:/QtNew/myProjects/Day7 - Copy/CMakeFiles/Day7_autogen.dir/" MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\Qt86\5.8\msvc2015\lib\Qt5Widgets.lib;C:\Qt86\5.8\msvc2015\lib\Qt5Gui.lib;C:\Qt86\5.8\msvc2015\lib\Qt5Sql.lib;C:\Qt86\5.8\msvc2015\lib\Qt5Xml.lib;C:\Qt86\5.8\msvc2015\lib\Qt5XmlPatterns.lib;C:\Qt86\5.8\msvc2015\lib\Qt5Network.lib;C:\Qt86\5.8\msvc2015\lib\Qt5Core.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/QtNew/myProjects/Day7 - Copy/MinSizeRel/Day7.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/QtNew/myProjects/Day7 - Copy/MinSizeRel/Day7.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\QtNew\myProjects\Day7 - Copy;C:\QtNew\myProjects\Day7 - Copy\Day7_autogen\include;C:\QtNew\myProjects\Day7 - Copy\..\include;C:\Qt86\5.8\msvc2015\include;C:\Qt86\5.8\msvc2015\include\QtWidgets;C:\Qt86\5.8\msvc2015\include\QtGui;C:\Qt86\5.8\msvc2015\include\QtANGLE;C:\Qt86\5.8\msvc2015\include\QtCore;C:\Qt86\5.8\msvc2015\.\mkspecs\win32-msvc2015;C:\Qt86\5.8\msvc2015\include\QtSql;C:\Qt86\5.8\msvc2015\include\QtXml;C:\Qt86\5.8\msvc2015\include\QtXmlPatterns;C:\Qt86\5.8\msvc2015\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_SQL_LIB;QT_XML_LIB;QT_XMLPATTERNS_LIB;QT_NETWORK_LIB;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_SQL_LIB;QT_XML_LIB;QT_XMLPATTERNS_LIB;QT_NETWORK_LIB;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\QtNew\myProjects\Day7 - Copy;C:\QtNew\myProjects\Day7 - Copy\Day7_autogen\include;C:\QtNew\myProjects\Day7 - Copy\..\include;C:\Qt86\5.8\msvc2015\include;C:\Qt86\5.8\msvc2015\include\QtWidgets;C:\Qt86\5.8\msvc2015\include\QtGui;C:\Qt86\5.8\msvc2015\include\QtANGLE;C:\Qt86\5.8\msvc2015\include\QtCore;C:\Qt86\5.8\msvc2015\.\mkspecs\win32-msvc2015;C:\Qt86\5.8\msvc2015\include\QtSql;C:\Qt86\5.8\msvc2015\include\QtXml;C:\Qt86\5.8\msvc2015\include\QtXmlPatterns;C:\Qt86\5.8\msvc2015\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\QtNew\myProjects\Day7 - Copy;C:\QtNew\myProjects\Day7 - Copy\Day7_autogen\include;C:\QtNew\myProjects\Day7 - Copy\..\include;C:\Qt86\5.8\msvc2015\include;C:\Qt86\5.8\msvc2015\include\QtWidgets;C:\Qt86\5.8\msvc2015\include\QtGui;C:\Qt86\5.8\msvc2015\include\QtANGLE;C:\Qt86\5.8\msvc2015\include\QtCore;C:\Qt86\5.8\msvc2015\.\mkspecs\win32-msvc2015;C:\Qt86\5.8\msvc2015\include\QtSql;C:\Qt86\5.8\msvc2015\include\QtXml;C:\Qt86\5.8\msvc2015\include\QtXmlPatterns;C:\Qt86\5.8\msvc2015\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target Day7</Message>
+      <Command>setlocal
+cd "C:\QtNew\myProjects\Day7 - Copy"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\a\cmake\bin\cmake.exe -E cmake_autogen "C:/QtNew/myProjects/Day7 - Copy/CMakeFiles/Day7_autogen.dir/" RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\Qt86\5.8\msvc2015\lib\Qt5Widgets.lib;C:\Qt86\5.8\msvc2015\lib\Qt5Gui.lib;C:\Qt86\5.8\msvc2015\lib\Qt5Sql.lib;C:\Qt86\5.8\msvc2015\lib\Qt5Xml.lib;C:\Qt86\5.8\msvc2015\lib\Qt5XmlPatterns.lib;C:\Qt86\5.8\msvc2015\lib\Qt5Network.lib;C:\Qt86\5.8\msvc2015\lib\Qt5Core.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/QtNew/myProjects/Day7 - Copy/RelWithDebInfo/Day7.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/QtNew/myProjects/Day7 - Copy/RelWithDebInfo/Day7.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\QtNew\myProjects\Day7 - Copy\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/QtNew/myProjects/Day7 - Copy/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\a\cmake\bin\cmake.exe "-HC:/QtNew/myProjects/Day7 - Copy" "-BC:/QtNew/myProjects/Day7 - Copy" --check-stamp-file "C:/QtNew/myProjects/Day7 - Copy/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/QtNew/myProjects/Day7 - Copy/CMakeLists.txt;C:\QtNew\myProjects\Day7 - Copy\CMakeLists.txt;C:\QtNew\myProjects\Day7 - Copy\CMakeFiles\3.8.0-rc2\CMakeSystem.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;C:\QtNew\myProjects\Day7 - Copy\CMakeFiles\3.8.0-rc2\CMakeCCompiler.cmake;C:\QtNew\myProjects\Day7 - Copy\CMakeFiles\3.8.0-rc2\CMakeCXXCompiler.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;C:\a\cmake\share\cmake-3.8\Modules\Platform\Windows.cmake;C:\a\cmake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeCInformation.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\a\cmake\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;C:\a\cmake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\QtNew\myProjects\Day7 - Copy\CMakeFiles\3.8.0-rc2\CMakeRCCompiler.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\a\cmake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;C:\a\cmake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\a\cmake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeParseArguments.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeParseArguments.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Sql\Qt5SqlConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Sql\Qt5SqlConfig.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Sql\Qt5Sql_QMYSQLDriverPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Sql\Qt5Sql_QODBCDriverPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Sql\Qt5Sql_QPSQLDriverPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Sql\Qt5Sql_QSQLiteDriverPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5XmlPatterns\Qt5XmlPatternsConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5XmlPatterns\Qt5XmlPatternsConfig.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Network\Qt5Network_QNativeWifiEnginePlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;C:\a\cmake\share\cmake-3.8\Modules\AutogenInfo.cmake.in;C:\QtNew\myProjects\Day7 - Copy\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\QtNew\myProjects\Day7 - Copy\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/QtNew/myProjects/Day7 - Copy/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\a\cmake\bin\cmake.exe "-HC:/QtNew/myProjects/Day7 - Copy" "-BC:/QtNew/myProjects/Day7 - Copy" --check-stamp-file "C:/QtNew/myProjects/Day7 - Copy/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/QtNew/myProjects/Day7 - Copy/CMakeLists.txt;C:\QtNew\myProjects\Day7 - Copy\CMakeLists.txt;C:\QtNew\myProjects\Day7 - Copy\CMakeFiles\3.8.0-rc2\CMakeSystem.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;C:\QtNew\myProjects\Day7 - Copy\CMakeFiles\3.8.0-rc2\CMakeCCompiler.cmake;C:\QtNew\myProjects\Day7 - Copy\CMakeFiles\3.8.0-rc2\CMakeCXXCompiler.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;C:\a\cmake\share\cmake-3.8\Modules\Platform\Windows.cmake;C:\a\cmake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeCInformation.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\a\cmake\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;C:\a\cmake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\QtNew\myProjects\Day7 - Copy\CMakeFiles\3.8.0-rc2\CMakeRCCompiler.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\a\cmake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;C:\a\cmake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\a\cmake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeParseArguments.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeParseArguments.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Sql\Qt5SqlConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Sql\Qt5SqlConfig.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Sql\Qt5Sql_QMYSQLDriverPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Sql\Qt5Sql_QODBCDriverPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Sql\Qt5Sql_QPSQLDriverPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Sql\Qt5Sql_QSQLiteDriverPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5XmlPatterns\Qt5XmlPatternsConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5XmlPatterns\Qt5XmlPatternsConfig.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Network\Qt5Network_QNativeWifiEnginePlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;C:\a\cmake\share\cmake-3.8\Modules\AutogenInfo.cmake.in;C:\QtNew\myProjects\Day7 - Copy\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\QtNew\myProjects\Day7 - Copy\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/QtNew/myProjects/Day7 - Copy/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\a\cmake\bin\cmake.exe "-HC:/QtNew/myProjects/Day7 - Copy" "-BC:/QtNew/myProjects/Day7 - Copy" --check-stamp-file "C:/QtNew/myProjects/Day7 - Copy/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/QtNew/myProjects/Day7 - Copy/CMakeLists.txt;C:\QtNew\myProjects\Day7 - Copy\CMakeLists.txt;C:\QtNew\myProjects\Day7 - Copy\CMakeFiles\3.8.0-rc2\CMakeSystem.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;C:\QtNew\myProjects\Day7 - Copy\CMakeFiles\3.8.0-rc2\CMakeCCompiler.cmake;C:\QtNew\myProjects\Day7 - Copy\CMakeFiles\3.8.0-rc2\CMakeCXXCompiler.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;C:\a\cmake\share\cmake-3.8\Modules\Platform\Windows.cmake;C:\a\cmake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeCInformation.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\a\cmake\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;C:\a\cmake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\QtNew\myProjects\Day7 - Copy\CMakeFiles\3.8.0-rc2\CMakeRCCompiler.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\a\cmake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;C:\a\cmake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\a\cmake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeParseArguments.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeParseArguments.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Sql\Qt5SqlConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Sql\Qt5SqlConfig.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Sql\Qt5Sql_QMYSQLDriverPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Sql\Qt5Sql_QODBCDriverPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Sql\Qt5Sql_QPSQLDriverPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Sql\Qt5Sql_QSQLiteDriverPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5XmlPatterns\Qt5XmlPatternsConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5XmlPatterns\Qt5XmlPatternsConfig.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Network\Qt5Network_QNativeWifiEnginePlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;C:\a\cmake\share\cmake-3.8\Modules\AutogenInfo.cmake.in;C:\QtNew\myProjects\Day7 - Copy\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\QtNew\myProjects\Day7 - Copy\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/QtNew/myProjects/Day7 - Copy/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\a\cmake\bin\cmake.exe "-HC:/QtNew/myProjects/Day7 - Copy" "-BC:/QtNew/myProjects/Day7 - Copy" --check-stamp-file "C:/QtNew/myProjects/Day7 - Copy/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/QtNew/myProjects/Day7 - Copy/CMakeLists.txt;C:\QtNew\myProjects\Day7 - Copy\CMakeLists.txt;C:\QtNew\myProjects\Day7 - Copy\CMakeFiles\3.8.0-rc2\CMakeSystem.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;C:\QtNew\myProjects\Day7 - Copy\CMakeFiles\3.8.0-rc2\CMakeCCompiler.cmake;C:\QtNew\myProjects\Day7 - Copy\CMakeFiles\3.8.0-rc2\CMakeCXXCompiler.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;C:\a\cmake\share\cmake-3.8\Modules\Platform\Windows.cmake;C:\a\cmake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeCInformation.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\a\cmake\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;C:\a\cmake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\QtNew\myProjects\Day7 - Copy\CMakeFiles\3.8.0-rc2\CMakeRCCompiler.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\a\cmake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;C:\a\cmake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\a\cmake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeParseArguments.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\a\cmake\share\cmake-3.8\Modules\CMakeParseArguments.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Sql\Qt5SqlConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Sql\Qt5SqlConfig.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Sql\Qt5Sql_QMYSQLDriverPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Sql\Qt5Sql_QODBCDriverPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Sql\Qt5Sql_QPSQLDriverPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Sql\Qt5Sql_QSQLiteDriverPlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5XmlPatterns\Qt5XmlPatternsConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5XmlPatterns\Qt5XmlPatternsConfig.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Network\Qt5Network_QNativeWifiEnginePlugin.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;C:\Qt86\5.8\msvc2015\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;C:\a\cmake\share\cmake-3.8\Modules\AutogenInfo.cmake.in;C:\QtNew\myProjects\Day7 - Copy\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\QtNew\myProjects\Day7 - Copy\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\QtNew\myProjects\Day7 - Copy\mainwindow.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ui_mainwindow.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Qt86\5.8\msvc2015\bin\uic.exe -o "C:/QtNew/myProjects/Day7 - Copy/ui_mainwindow.h" "C:/QtNew/myProjects/Day7 - Copy/mainwindow.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/QtNew/myProjects/Day7 - Copy/mainwindow.ui;C:\QtNew\myProjects\Day7 - Copy\mainwindow.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\QtNew\myProjects\Day7 - Copy\ui_mainwindow.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ui_mainwindow.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Qt86\5.8\msvc2015\bin\uic.exe -o "C:/QtNew/myProjects/Day7 - Copy/ui_mainwindow.h" "C:/QtNew/myProjects/Day7 - Copy/mainwindow.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/QtNew/myProjects/Day7 - Copy/mainwindow.ui;C:\QtNew\myProjects\Day7 - Copy\mainwindow.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\QtNew\myProjects\Day7 - Copy\ui_mainwindow.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ui_mainwindow.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Qt86\5.8\msvc2015\bin\uic.exe -o "C:/QtNew/myProjects/Day7 - Copy/ui_mainwindow.h" "C:/QtNew/myProjects/Day7 - Copy/mainwindow.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/QtNew/myProjects/Day7 - Copy/mainwindow.ui;C:\QtNew\myProjects\Day7 - Copy\mainwindow.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\QtNew\myProjects\Day7 - Copy\ui_mainwindow.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ui_mainwindow.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Qt86\5.8\msvc2015\bin\uic.exe -o "C:/QtNew/myProjects/Day7 - Copy/ui_mainwindow.h" "C:/QtNew/myProjects/Day7 - Copy/mainwindow.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/QtNew/myProjects/Day7 - Copy/mainwindow.ui;C:\QtNew\myProjects\Day7 - Copy\mainwindow.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\QtNew\myProjects\Day7 - Copy\ui_mainwindow.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\QtNew\myProjects\Day7 - Copy\dialogsort.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ui_dialogsort.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Qt86\5.8\msvc2015\bin\uic.exe -o "C:/QtNew/myProjects/Day7 - Copy/ui_dialogsort.h" "C:/QtNew/myProjects/Day7 - Copy/dialogsort.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/QtNew/myProjects/Day7 - Copy/dialogsort.ui;C:\QtNew\myProjects\Day7 - Copy\dialogsort.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\QtNew\myProjects\Day7 - Copy\ui_dialogsort.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ui_dialogsort.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Qt86\5.8\msvc2015\bin\uic.exe -o "C:/QtNew/myProjects/Day7 - Copy/ui_dialogsort.h" "C:/QtNew/myProjects/Day7 - Copy/dialogsort.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/QtNew/myProjects/Day7 - Copy/dialogsort.ui;C:\QtNew\myProjects\Day7 - Copy\dialogsort.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\QtNew\myProjects\Day7 - Copy\ui_dialogsort.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ui_dialogsort.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Qt86\5.8\msvc2015\bin\uic.exe -o "C:/QtNew/myProjects/Day7 - Copy/ui_dialogsort.h" "C:/QtNew/myProjects/Day7 - Copy/dialogsort.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/QtNew/myProjects/Day7 - Copy/dialogsort.ui;C:\QtNew\myProjects\Day7 - Copy\dialogsort.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\QtNew\myProjects\Day7 - Copy\ui_dialogsort.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ui_dialogsort.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Qt86\5.8\msvc2015\bin\uic.exe -o "C:/QtNew/myProjects/Day7 - Copy/ui_dialogsort.h" "C:/QtNew/myProjects/Day7 - Copy/dialogsort.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/QtNew/myProjects/Day7 - Copy/dialogsort.ui;C:\QtNew\myProjects\Day7 - Copy\dialogsort.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\QtNew\myProjects\Day7 - Copy\ui_dialogsort.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\QtNew\myProjects\Day7 - Copy\mainwindow.h" />
+    <ClInclude Include="C:\QtNew\myProjects\Day7 - Copy\worker.h" />
+    <ClInclude Include="C:\QtNew\myProjects\Day7 - Copy\dialogsort.h" />
+    <ClInclude Include="C:\QtNew\myProjects\Day7 - Copy\ui_mainwindow.h" />
+    <ClInclude Include="C:\QtNew\myProjects\Day7 - Copy\ui_dialogsort.h" />
+    <ClCompile Include="C:\QtNew\myProjects\Day7 - Copy\main.cpp"  />
+    <ClCompile Include="C:\QtNew\myProjects\Day7 - Copy\mainwindow.cpp"  />
+    <ClCompile Include="C:\QtNew\myProjects\Day7 - Copy\dialogsort.cpp"  />
+    <ClCompile Include="C:\QtNew\myProjects\Day7 - Copy\worker.cpp"  />
+    <ClCompile Include="C:\QtNew\myProjects\Day7 - Copy\Day7_autogen\moc_compilation.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\QtNew\myProjects\Day7 - Copy\ZERO_CHECK.vcxproj">
+      <Project>1249E914-9D60-347C-AE6F-66CAACDA943F</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
